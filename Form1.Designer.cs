@@ -32,6 +32,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.rtbText = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // btnOpen
@@ -89,6 +90,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.RichTextBox rtbText;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
