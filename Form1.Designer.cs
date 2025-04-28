@@ -33,12 +33,14 @@
             this.rtbText = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.listUndo = new System.Windows.Forms.ListBox();
+            this.btnUndo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpen
             // 
             this.btnOpen.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnOpen.Location = new System.Drawing.Point(34, 37);
+            this.btnOpen.Location = new System.Drawing.Point(34, 31);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(123, 41);
             this.btnOpen.TabIndex = 0;
@@ -49,7 +51,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSave.Location = new System.Drawing.Point(178, 37);
+            this.btnSave.Location = new System.Drawing.Point(178, 31);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(123, 41);
             this.btnSave.TabIndex = 1;
@@ -59,15 +61,35 @@
             // 
             // rtbText
             // 
-            this.rtbText.Location = new System.Drawing.Point(34, 96);
+            this.rtbText.Location = new System.Drawing.Point(34, 84);
             this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(955, 469);
+            this.rtbText.Size = new System.Drawing.Size(734, 481);
             this.rtbText.TabIndex = 2;
             this.rtbText.Text = "";
+            this.rtbText.TextChanged += new System.EventHandler(this.rtbText_TextChanged);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // listUndo
+            // 
+            this.listUndo.FormattingEnabled = true;
+            this.listUndo.ItemHeight = 15;
+            this.listUndo.Location = new System.Drawing.Point(774, 84);
+            this.listUndo.Name = "listUndo";
+            this.listUndo.Size = new System.Drawing.Size(236, 484);
+            this.listUndo.TabIndex = 3;
+            // 
+            // btnUndo
+            // 
+            this.btnUndo.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnUndo.Location = new System.Drawing.Point(323, 31);
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(123, 41);
+            this.btnUndo.TabIndex = 4;
+            this.btnUndo.Text = "復原上一步";
+            this.btnUndo.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -75,6 +97,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1022, 586);
+            this.Controls.Add(this.btnUndo);
+            this.Controls.Add(this.listUndo);
             this.Controls.Add(this.rtbText);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnOpen);
@@ -91,6 +115,8 @@
         private System.Windows.Forms.RichTextBox rtbText;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ListBox listUndo;
+        private System.Windows.Forms.Button btnUndo;
     }
 }
 
