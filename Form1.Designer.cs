@@ -31,7 +31,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.listUndo = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFont = new System.Windows.Forms.ComboBox();
             this.comboBoxStyle = new System.Windows.Forms.ComboBox();
             this.comboBoxSize = new System.Windows.Forms.ComboBox();
             this.rtbText = new System.Windows.Forms.RichTextBox();
@@ -54,13 +54,13 @@
             this.listUndo.Size = new System.Drawing.Size(219, 334);
             this.listUndo.TabIndex = 3;
             // 
-            // comboBox1
+            // comboBoxFont
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(30, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(217, 23);
-            this.comboBox1.TabIndex = 6;
+            this.comboBoxFont.FormattingEnabled = true;
+            this.comboBoxFont.Location = new System.Drawing.Point(30, 31);
+            this.comboBoxFont.Name = "comboBoxFont";
+            this.comboBoxFont.Size = new System.Drawing.Size(217, 23);
+            this.comboBoxFont.TabIndex = 6;
             // 
             // comboBoxStyle
             // 
@@ -139,7 +139,7 @@
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.comboBoxSize);
             this.Controls.Add(this.comboBoxStyle);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxFont);
             this.Controls.Add(this.listUndo);
             this.Controls.Add(this.rtbText);
             this.Name = "Form1";
@@ -152,7 +152,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ListBox listUndo;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxFont;
         private System.Windows.Forms.ComboBox comboBoxStyle;
         private System.Windows.Forms.ComboBox comboBoxSize;
         private System.Windows.Forms.RichTextBox rtbText;
