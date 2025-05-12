@@ -61,6 +61,7 @@
             this.comboBoxFont.Name = "comboBoxFont";
             this.comboBoxFont.Size = new System.Drawing.Size(217, 23);
             this.comboBoxFont.TabIndex = 6;
+            this.comboBoxFont.SelectedIndexChanged += new System.EventHandler(this.comboBox_SelectedIndexChanged);
             // 
             // comboBoxStyle
             // 
@@ -69,6 +70,7 @@
             this.comboBoxStyle.Name = "comboBoxStyle";
             this.comboBoxStyle.Size = new System.Drawing.Size(121, 23);
             this.comboBoxStyle.TabIndex = 7;
+            this.comboBoxStyle.SelectedIndexChanged += new System.EventHandler(this.comboBox_SelectedIndexChanged);
             // 
             // comboBoxSize
             // 
@@ -77,6 +79,7 @@
             this.comboBoxSize.Name = "comboBoxSize";
             this.comboBoxSize.Size = new System.Drawing.Size(121, 23);
             this.comboBoxSize.TabIndex = 8;
+            this.comboBoxSize.SelectedIndexChanged += new System.EventHandler(this.comboBox_SelectedIndexChanged);
             // 
             // rtbText
             // 
