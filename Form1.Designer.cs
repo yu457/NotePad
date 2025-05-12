@@ -99,6 +99,7 @@
             this.btnRedo.TabIndex = 12;
             this.btnRedo.Text = "重做下一步";
             this.btnRedo.UseVisualStyleBackColor = true;
+            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
             // 
             // btnUndo
             // 
@@ -109,6 +110,7 @@
             this.btnUndo.TabIndex = 11;
             this.btnUndo.Text = "復原上一步";
             this.btnUndo.UseVisualStyleBackColor = true;
+            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
             // 
             // btnSave
             // 
@@ -119,6 +121,7 @@
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "儲存";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnOpen
             // 
@@ -129,6 +132,7 @@
             this.btnOpen.TabIndex = 9;
             this.btnOpen.Text = "開啟檔案";
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // Form1
             // 
